@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+    <view
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            class="com.radmation.RAnayaBattleship.GameBoard"
+            android:id="@+id/boardView"
+            android:layout_gravity="center_horizontal"
+        />
+    <Button
+            android:onClick="onClickAddShip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Ship"
+            android:id="@+id/add_ship"
+            android:layout_alignTop="@+id/down" android:layout_centerHorizontal="true"/>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickMoveDown"
+            android:text="D"
+            android:id="@+id/down" android:layout_below="@+id/up" android:layout_alignParentLeft="true"/>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickMoveUp"
+            android:text="U"
+            android:id="@+id/up" android:layout_below="@+id/boardView" android:layout_alignParentLeft="true"/>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickMoveLeft"
+            android:text="L"
+            android:id="@+id/left"
+            android:layout_above="@+id/down" android:layout_alignParentRight="true"/>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickMoveRight"
+            android:text="R"
+            android:id="@+id/right" android:layout_alignTop="@+id/add_ship" android:layout_alignParentRight="true"/>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRotate"
+            android:text="Rotate"
+            android:id="@+id/rotate"
+            android:layout_above="@+id/add_ship" android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1">
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Username:  "
+                android:id="@+id/textView"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtUsername" android:layout_weight="1" android:hint="username"
+                android:text="radmation@yahoo.com"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Password:  "
+                android:id="@+id/textView2"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:layout_weight="1" android:hint="password" android:id="@+id/edtPassword"
+                android:text="1Animation2"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/btnLogin"
+                android:onClick="loginToServer" android:layout_gravity="left"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:id="@+id/btnLogout"
+                android:onClick="logoutOfServer"
+                android:enabled="false"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Users"
+                android:id="@+id/btnGetUsers"
+                android:onClick="getUsersOnClick"
+                android:enabled="false"/>
+    </TableRow>
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="160dp" android:weightSum="1">
+        <Spinner
+                android:layout_width="56dp"
+                android:layout_height="29dp"
+                android:id="@+id/spinnerShips" android:visibility="invisible"/>
+        <Spinner
+                android:layout_width="64dp"
+                android:layout_height="36dp"
+                android:id="@+id/spinnerDirection" android:visibility="invisible"/>
+        <ImageView
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView"/>
+    </TableRow>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" android:layout_gravity="center_horizontal"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Available Users"
+            android:id="@+id/textView3"/>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:layout_gravity="center_horizontal"
+            />
+</LinearLayout>
+

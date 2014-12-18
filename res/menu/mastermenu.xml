@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/game"
+          android:orderInCategory="1"
+          android:showAsAction="always"
+          android:title="Game" /> <!--gets displayed-->
+    <!--android:icon="@drawable/ic_action_log"-->
+    <item android:id="@+id/preferences"
+          android:orderInCategory="3"
+          android:showAsAction="always"
+          android:title="Prefs" /> <!--gets displayed-->
+    <!--android:icon="@drawable/ic_action_log"-->
+    <item android:id="@+id/touch"
+          android:orderInCategory="2"
+          android:showAsAction="always"
+          android:title="Touch" /> <!--gets displayed-->
+    <!--android:icon="@drawable/ic_action_log"-->
+</menu>
